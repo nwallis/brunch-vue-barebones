@@ -1,4 +1,6 @@
-# Brunch Vue Barebones
+# Brunch Vue Barebones (with Bootstrap)
+
+Thanks to Tom Quirk for the original - I have added bootstrap to this config for a quick environment to prototype vue.js components in a bootstrap environment
 
 A _barebones_ Brunch skeleton for [Vue.js](https://vuejs.org/) - minimal dependencies!
 
