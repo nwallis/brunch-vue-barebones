@@ -1,18 +1,38 @@
 module.exports = {
-  files: {
-    javascripts: {
-      joinTo: {
-        'vendor.js': /^(?!app)/,
-        'app.js': /^app/
-      }
+    files: {
+        javascripts: {
+            joinTo: {
+                'vendor.js': /^(?!app)/,
+                'app.js': /^app/
+            }
+        },
+        templates: {
+            joinTo: 'app.js'
+        },
+        stylesheets: {
+            joinTo: {
+                'css/prototyping.min.css': 'app/scss/main.scss',
+            }
+        }
     },
-    templates: {
-      joinTo: 'app.js'
+    npm: {
+        globals: {
+            jQuery: 'jquery',
+            $: 'jquery',
+            Popper: 'popper.js'
+        },
+    },
+    plugins: {
+        babel: {
+            presets: ['es2015']
+        },
+        sass: {
+            options: {
+                includePaths: [
+                    "node_modules/bootstrap/scss/"
+                ],
+                precision: 8
+            }
+        },
     }
-  },
-  plugins: {
-    babel: {
-      presets: ['es2015']
-    }
-  }
 }
