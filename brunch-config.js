@@ -21,6 +21,9 @@ module.exports = {
             $: 'jquery',
             Popper: 'popper.js'
         },
+        aliases: {
+            'vue': 'vue/dist/vue.common.js',
+        }
     },
     plugins: {
         babel: {

@@ -1,14 +1,13 @@
 import Vue from 'vue'
-import App from './App'
-import router from './router'
 import "vueify/lib/insert-css"
 import bootstrap from "bootstrap";
+import Testing from "./components/testing.vue";
 
 Vue.config.productionTip = false
 
-/* eslint-disable no-new */
 new Vue({
-    el: '#app',
-    router,
-    render: h => h(App)
+    el: '#vue-app',
+    components: {
+        Testing
+    }
 })
